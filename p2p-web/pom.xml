@@ -149,12 +149,14 @@
             <artifactId>fastjson</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
+
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
         <dependency>
             <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-web</artifactId>
+            <artifactId>spring-security-core</artifactId>
+            <version>5.1.2.RELEASE</version>
         </dependency>
-
 
 
 

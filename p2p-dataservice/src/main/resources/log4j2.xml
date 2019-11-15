@@ -18,7 +18,7 @@
      -->
     
     <loggers> 
-      <logger name="com.xiangxuepf.p2p.mapper" level="debug"/>
+      <logger name="com.xiangxuepf.p2p.dataservice.mapper" level="debug"/>
         <root level="debug"> 
           <appender-ref ref="Console"/> 
           <appender-ref ref="RollingFile"/> 

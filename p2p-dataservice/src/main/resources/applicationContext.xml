@@ -19,8 +19,8 @@
   <!-- 加载系统配置文件 --> 
   <context:property-placeholder location="classpath:*.properties" />
   <!-- 扫描注解 --> 
-  <context:component-scan base-package="com.xiangxuepf.p2p.service" />
-  
+  <context:component-scan base-package="com.xiangxuepf.p2p.dataservice.service" />
+
   <!-- 导入数据相关配置 --> 
   <import resource="applicationContext-datasource.xml" /> 
   <!-- 导入redis配置 --> 

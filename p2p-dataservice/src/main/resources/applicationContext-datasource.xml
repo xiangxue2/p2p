@@ -17,7 +17,7 @@
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="close">
 		<property name="url"
-			value="jdbc:mysql://192.168.0.103:3306/p2p?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+			value="jdbc:mysql://192.168.0.123:3306/p2p?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="username" value="root" />
 		<property name="password" value="root" />
@@ -43,7 +43,7 @@
 
 	<!-- scan for mappers and let them be autowired -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.xiangxuepf.p2p.mapper" />
+		<property name="basePackage" value="com.xiangxuepf.p2p.dataservice.mapper" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 		<!--被打了删除线，可以不管它-->
 	</bean>
@@ -71,7 +71,7 @@
 
 	<!-- Service层事务控制 -->
 	<aop:config>
-		<aop:pointcut id="pointcut"	expression="execution(* com.xiangxuepf.p2p.service.**.*.*(..))" />
+		<aop:pointcut id="pointcut"	expression="execution(* com.xiangxuepf.p2p.dataservice.service.*.*.*(..))" />
 		<aop:advisor pointcut-ref="pointcut" advice-ref="txAdvice" />
 	</aop:config>
 </beans>
