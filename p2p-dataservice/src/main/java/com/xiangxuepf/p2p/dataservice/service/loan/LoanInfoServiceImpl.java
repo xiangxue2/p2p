@@ -1,6 +1,6 @@
 package com.xiangxuepf.p2p.dataservice.service.loan;
 
-import com.xiangxuepf.p2p.common.Constants;
+import com.xiangxuepf.p2p.common.constants.Constants;
 import com.xiangxuepf.p2p.dataservice.mapper.loan.LoanInfoMapper;
 import com.xiangxuepf.p2p.exterface.model.loan.LoanInfo;
 import com.xiangxuepf.p2p.exterface.service.loan.LoanInfoService;

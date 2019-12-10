@@ -68,4 +68,46 @@
       available_money = #{availableMoney,jdbcType=DOUBLE}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  
+  <!--根据用户标识获取账户信息-->
+  <select id="selectFinanceAccountByUid" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from
+    u_finance_account
+    where
+    uid = #{uid}
+  </select>
+
+  <!--更新用户余额-->
+  <update id="updateFinanceAccountByBid">
+    update
+        u_finance_account
+	set
+	    available_money = available_money - #{bidMoney}
+	where
+		uid = #{uid}
+	  and
+		(u_finance_account.available_money - #{bidMoney}) >= 0
+  </update>
+
+  <!--收益返还时更新用户可用余额-->
+  <update id="updateFinanceAccountByIncomeBack">
+    UPDATE
+       u_finance_account
+    SET
+      available_money = available_money + #{bidMoney} + #{incomeMoney}
+    WHERE
+      uid = #{uid}
+  </update>
+
+  <!--用户充值，更新账户可以余额；-->
+  <update id="updateFinanceAccountByRecharge">
+    UPDATE
+      u_finance_account
+    SET
+      available_money = available_money + #{rechargeMoney}
+    WHERE
+      uid = #{uid}
+  </update>
 </mapper>

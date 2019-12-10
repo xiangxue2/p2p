@@ -85,7 +85,22 @@ $(function(){
 		$(this).removeClass('phone-ewm-hover');
 	});
 	//个人信息下拉
+	/*
+	 发送ajax
+	 url /loan/myFinanceAccount
+	 type get
+	 success:
+	 frame_top.html()  //html()使用；  //@
+	 jsonObject.availableMoney;
+	 */
 	$(".logged").hover(function(){
+		$.ajax({
+			url: "/p2p/loan/myFinanceAccount",
+			type: "get",
+			success: function (jsonObject) {
+				$("#frame_top").html(jsonObject.availableMoney);
+            }
+		});
 		$(this).addClass("logged-hover");
 		$(".userinfo-drop-down",this).stop().animate({ height: '205px'},300);
 	},function(){

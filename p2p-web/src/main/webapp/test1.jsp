@@ -9,10 +9,20 @@
 <html>
 <head>
     <title>ceshi</title>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script>
+        $(function () {
+           $("#btn").click(function () {
+               alert("hello btn");
+           });
+        });
+    </script>
 </head>
 <body>
 历史年化利率${historyAverageRate}
 总人数${allUserCount}
 <h2>累计投资金额${allBidMoney}</h2>
+<button id="btn">发送请求</button>
+
 </body>
 </html>

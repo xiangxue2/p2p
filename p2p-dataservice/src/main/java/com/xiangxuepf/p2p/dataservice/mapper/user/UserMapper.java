@@ -16,4 +16,19 @@ public interface UserMapper {
     int updateByPrimaryKey(User record);
 
     Long selectAllUserCount();
+
+    /**
+     * 根据手机号查询用户信息；
+     * @param phone
+     * @return
+     */
+    User selectUserByPhone(String phone);
+
+    /**
+     * 根据手机号和密码查询用户信息
+     * @param phone
+     * @param loginPassword
+     * @return
+     */
+    User selectUserByPhoneAndLoginPassword(String phone, String loginPassword);
 }

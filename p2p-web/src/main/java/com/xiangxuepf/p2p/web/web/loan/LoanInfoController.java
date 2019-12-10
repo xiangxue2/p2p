@@ -1,9 +1,14 @@
 package com.xiangxuepf.p2p.web.web.loan;
 
+import com.xiangxuepf.p2p.common.constants.Constants;
 import com.xiangxuepf.p2p.exterface.model.loan.LoanInfo;
+import com.xiangxuepf.p2p.exterface.model.user.FinanceAccount;
+import com.xiangxuepf.p2p.exterface.model.user.User;
 import com.xiangxuepf.p2p.exterface.service.loan.BidInfoService;
 import com.xiangxuepf.p2p.exterface.service.loan.LoanInfoService;
+import com.xiangxuepf.p2p.exterface.service.user.FinanceAccountService;
 import com.xiangxuepf.p2p.exterface.vo.BidInfoVO;
+import com.xiangxuepf.p2p.exterface.vo.BidUserTopVO;
 import com.xiangxuepf.p2p.exterface.vo.PaginationVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,6 +31,8 @@ public class LoanInfoController {
     private LoanInfoService loanInfoService;
     @Autowired
     private BidInfoService bidInfoService;
+    @Autowired
+    private FinanceAccountService financeAccountService;
 
     /*
     * 关于RequestMapping映射有规范； //@
@@ -82,6 +89,9 @@ public class LoanInfoController {
         //TODO
         //用户投资排行榜
 
+        List<BidUserTopVO> bidUserTopVOList = bidInfoService.queryBidUserTop();
+        model.addAttribute("bidUserTopVOList",bidUserTopVOList);
+
         return "loan";
     }
 
@@ -97,9 +107,17 @@ public class LoanInfoController {
         List<BidInfoVO> bidInfoVOList = bidInfoService.queryBidInfoListByLoanId(id);
         model.addAttribute("loanInfo",loanInfo);
         model.addAttribute("bidInfoVOList",bidInfoVOList);
-        //TODO
-        //获取当前用户的账号可用余额；
 
+        //获取当前用户的账号余额；
+
+        //获取当前用户的信息
+        User sessionUser = (User) request.getSession().getAttribute(Constants.SESSION_USER);
+        //判断用户是否登录；
+        if (null != sessionUser) {
+            //获取当前用户的账号余额；
+            FinanceAccount financeAccount = financeAccountService.queryFinanceAcountByUid(sessionUser.getId());
+            model.addAttribute("financeAccount",financeAccount);
+        }
 
         return "loanInfo";
     }

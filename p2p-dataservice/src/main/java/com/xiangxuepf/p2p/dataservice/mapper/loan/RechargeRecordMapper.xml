@@ -114,4 +114,27 @@
       recharge_desc = #{rechargeDesc,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <!--根据充值订单号更新充值记录-->
+  <update id="updateRechargeRecordByRechargeNo">
+    update
+      b_recharge_record
+    <set>
+
+      <if test="rechargeStatus != null">
+        recharge_status = #{rechargeStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="rechargeMoney != null">
+        recharge_money = #{rechargeMoney,jdbcType=DOUBLE},
+      </if>
+      <if test="rechargeTime != null">
+        recharge_time = #{rechargeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="rechargeDesc != null">
+        recharge_desc = #{rechargeDesc,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where
+    recharge_no = #{rechargeNO,jdbcType=INTEGER}
+  </update>
 </mapper>

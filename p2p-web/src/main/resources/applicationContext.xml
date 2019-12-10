@@ -16,17 +16,17 @@
         http://www.springframework.org/schema/aop/spring-aop.xsd"> 
         
   <!-- 加载系统配置文件 -->
-  <context:property-placeholder location="classpath:config.properties"/>
-  
-  <!--<bean class="com.xiangxuepf.p2p.common.config.Config">-->
-  	<!--<property name="realName_apiId" value="${realName_apiId}"/>-->
-  	<!--<property name="realName_apiKey" value="${realName_apiKey}"/>-->
-  	<!--<property name="realName_url" value="${realName_url}"/>-->
-  	<!--<property name="p2p_alipay_pay_url" value="${p2p_alipay_pay_url}"/>-->
-  	<!--<property name="p2p_alipay_pay_query_url" value="${p2p_alipay_pay_query_url}"/>-->
-  	<!--<property name="p2p_wxpay_pay_url" value="${p2p_wxpay_pay_url}"/>-->
-  <!--</bean>-->
- 
+  <context:property-placeholder location="classpath:config-web.properties"/>
+
+  <bean id="configWeb" class="com.xiangxuepf.p2p.common.config.ConfigWeb">
+    <!--<property name="realName_apiId" value="${realName_apiId}"/>-->
+    <property name="realNameAppkey" value="${realNameAppkey}"/>
+    <property name="realNameUrl" value="${realNameUrl}"/>
+    <!--<property name="p2p_alipay_pay_url" value="${p2p_alipay_pay_url}"/>-->
+    <!--<property name="p2p_alipay_pay_query_url" value="${p2p_alipay_pay_query_url}"/>-->
+    <!--<property name="p2p_wxpay_pay_url" value="${p2p_wxpay_pay_url}"/>-->
+  </bean>
+
   <!-- 导入spring mvc配置文件 --> 
   <import resource="applicationContext-mvc.xml"/>  
    

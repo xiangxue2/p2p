@@ -1,18 +1,16 @@
 package com.xiangxuepf.p2p.web.web;
 
-import com.xiangxuepf.p2p.common.Constants;
+import com.xiangxuepf.p2p.common.constants.Constants;
 import com.xiangxuepf.p2p.exterface.model.loan.LoanInfo;
 import com.xiangxuepf.p2p.exterface.service.loan.BidInfoService;
 import com.xiangxuepf.p2p.exterface.service.loan.LoanInfoService;
 import com.xiangxuepf.p2p.exterface.service.user.UserService;
-import org.apache.taglibs.standard.tag.common.core.ParamSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.lang.reflect.ParameterizedType;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -75,6 +73,11 @@ public class IndexController {
         model.addAttribute("xLoanInfoList",xLoanInfoList);
         model.addAttribute("yLoanInfoList",yLoanInfoList);
         model.addAttribute("sLoanInfoList",sLoanInfoList);
+        return "index";
+    }
+
+    @RequestMapping("/test1")
+    public String test1(){
         return "index";
     }
 }

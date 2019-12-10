@@ -20,11 +20,11 @@
 	<!-- 投资业务 -->
 	<dubbo:reference id="bidInfoService" interface="com.xiangxuepf.p2p.exterface.service.loan.BidInfoService" version="1.0.0" check="false"></dubbo:reference>
 	<!-- 帐户业务 -->
-	<!--<dubbo:reference id="financeAccountService" interface="com.bjpowernode.p2p.service.user.FinanceAccountService" version="1.0.0" check="false"></dubbo:reference>-->
+	<dubbo:reference id="financeAccountService" interface="com.xiangxuepf.p2p.exterface.service.user.FinanceAccountService" version="1.0.0" check="false"></dubbo:reference>
 	<!-- 充值业务 -->
-	<!--<dubbo:reference id="rechargeRecordService" interface="com.bjpowernode.p2p.service.loan.RechargeRecordService" version="1.0.0" check="false"></dubbo:reference>-->
-	<!-- 收益业务 -->
+	<dubbo:reference id="rechargeRecordService" interface="com.xiangxuepf.p2p.exterface.service.loan.RechargeRecordService" version="1.0.0" check="false"></dubbo:reference>
+	<!-- 收益业务  timer工程-->
 	<!--<dubbo:reference id="incomeRecordService" interface="com.bjpowernode.p2p.service.loan.IncomeRecordService" version="1.0.0" check="false"></dubbo:reference>-->
 	<!-- 唯一数字 -->
-	<!--<dubbo:reference id="onlyNumberService" interface="com.bjpowernode.p2p.service.loan.OnlyNumberService" version="1.0.0" check="false"></dubbo:reference>-->
+	<dubbo:reference id="onlyNumberService" interface="com.xiangxuepf.p2p.exterface.service.loan.OnlyNumberService" version="1.0.0" check="false"></dubbo:reference>
 </beans>

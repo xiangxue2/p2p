@@ -14,4 +14,11 @@ public interface RechargeRecordMapper {
     int updateByPrimaryKeySelective(RechargeRecord record);
 
     int updateByPrimaryKey(RechargeRecord record);
+
+    /**
+     * 根据充值订单号，更新充值记录；
+     * @param rechargeRecord
+     * @return
+     */
+    int updateRechargeRecordByRechargeNo(RechargeRecord rechargeRecord);
 }

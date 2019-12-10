@@ -24,7 +24,7 @@
     <div class="homeWap">
       <div class="footer-section clearfix">
         <div class="footer-links">
-          <h3>关于动力</h3>
+          <h3>关于聚金</h3>
           <ul>
             <li><a href="javascript:void(0)">关于我们</a></li>
             <li><a href="javascript:void(0)" rel="nofollow">媒体报道</a></li>
@@ -50,19 +50,19 @@
         <div class="footer-contactus">
           <h3>联系我们</h3>
           <p>工作时间： 周一至周日9:00 - 21:00</p>
-          <p class="tel">400-800-0105</p>
-          <p>客服邮箱：<a style="cursor:pointer;" onclick="location.href='mailto:kefu@bjpowernode.com'">kefu@bjpowernode.com</a></p>
+          <p class="tel">4000-888-178</p>
+          <p>：<a style="cursor:pointer;" onclick="location.href='..'"></a></p>
         </div>
         <div class="footer-ewm">
-          <img src="${pageContext.request.contextPath}/images/weixin01.png" alt="动力金融网订阅号" />
-          <p>动力金融网订阅号</p>
+          <img src="${pageContext.request.contextPath}/images/weixin01.png" alt="聚金金融网订阅号" />
+          <p>聚金金融网订阅号</p>
         </div>
         <div class="footer-ewm">
-          <img src="${pageContext.request.contextPath}/images/weixin02.png" alt="动力金融网服务号" />
-          <p>动力金融网服务号</p>
+          <img src="${pageContext.request.contextPath}/images/weixin02.png" alt="聚金金融网服务号" />
+          <p>聚金金融网服务号</p>
         </div>
       </div>
-      <div class="copyright">版权所有 ©2017 北京动力节点教育科技有限公司   京ICP备09027468号   |   <img src="${pageContext.request.contextPath}/images/jinghui.png" alt="京公网安备" />京公网安备11030808027468</div>
+      <div class="copyright">版权所有 ©2017 聚金资本有限公司   京ICP备09027468号   |   <img src="${pageContext.request.contextPath}/images/jinghui.png" alt="京公网安备" />京公网安备11030808027468</div>
       <div class="certification-body">
         <a href="http://webscan.360.cn/index/checkwebsite/url/www.powernode.com" target="_blank" rel="nofollow" class="certification-1"></a>
          <a href="http://www.itrust.org.cn/home/index/wx_certifi/wm/WX2017012201.html?from=singlemessage&isappinstalled=1" target="_blank" rel="nofollow" class="certification-2"></a>

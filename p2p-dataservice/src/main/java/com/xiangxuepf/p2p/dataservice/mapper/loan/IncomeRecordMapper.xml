@@ -125,4 +125,13 @@
       income_status = #{incomeStatus,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <!--根据收益状态及收益时间获得收益记录-->
+  <select id="selectIncomeRecordByIncomeStatus" resultMap="BaseResultMap">
+  select
+  <include refid="Base_Column_List"/>
+from b_income_record
+where income_date = curdate()
+      and income_status = #{incomeStatus}
+  </select>
 </mapper>

@@ -7,7 +7,8 @@
   <!-- 应用名 -->
   <display-name>p2p</display-name>
 
-  <!-- 字符过滤器，字符编码UTF-8 -->
+  <!-- 字符过滤器，字符编码UTF-8 解决请求参数中文乱码
+    原生就是在每个controller方法上写request.setCod....-->
   <filter>
     <filter-name>encodingFilter</filter-name>
 
@@ -38,7 +39,7 @@
   <servlet-mapping>
     <!--这个dispatcher要与以上dispatcher一致-->
     <servlet-name>dispatcher</servlet-name>
-    <!--只要访问‘/’，则都走mvc-->
+    <!--只要访问‘/’，则都走mvc 300电商是配*.do-->
     <url-pattern>/</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
