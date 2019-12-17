@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * @author mhw
- * @create 2019-11-14 19:15
  */
 public class PaginationVO<T> implements Serializable {
     /**

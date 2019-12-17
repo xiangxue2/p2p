@@ -5,7 +5,6 @@ import org.junit.Test;
 
 /**
  * @author mhw
- * @create 2019-12-05 14:36
  */
 public class ToJsonStringTest {
     @Test

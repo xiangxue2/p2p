@@ -17,7 +17,6 @@ import java.util.Map;
 
 /**
  * @author mhw
- * @create 2019-11-26 13:41
  */
 @Controller
 public class BidInfoController {

@@ -7,7 +7,6 @@ import java.io.Serializable;
 
 /**
  * @author mhw
- * @create 2019-11-15 11:03
  */
 public class BidInfoVO extends BidInfo implements Serializable {
     private User user;

@@ -2,7 +2,6 @@ package com.xiangxuepf.p2p.exterface.service.loan;
 
 /**
  * @author mhw
- * @create 2019-11-11 15:10
  */
 //快捷键：Ctrl +Shift+ /
 //        输入/** ,点击“Enter”，自动根据参数和返回值生成注释模板

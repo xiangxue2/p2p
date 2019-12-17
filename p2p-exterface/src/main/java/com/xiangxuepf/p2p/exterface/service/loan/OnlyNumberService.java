@@ -2,7 +2,6 @@ package com.xiangxuepf.p2p.exterface.service.loan;
 
 /**
  * @author mhw
- * @create 2019-12-03 10:10
  */
 public interface OnlyNumberService {
     /**

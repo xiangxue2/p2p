@@ -2,7 +2,6 @@ package com.xiangxuepf.p2p.common.config;
 
 /**
  * @author mhw
- * @create 2019-11-21 08:10
  */
 public class ConfigWeb {
     /**

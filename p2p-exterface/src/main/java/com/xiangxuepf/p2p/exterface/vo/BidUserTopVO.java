@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * @author mhw
- * @create 2019-12-01 16:13
  */
 public class BidUserTopVO implements Serializable{
     /**

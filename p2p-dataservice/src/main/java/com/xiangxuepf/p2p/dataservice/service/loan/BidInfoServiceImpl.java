@@ -21,7 +21,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author mhw
- * @create 2019-11-13 15:59
  */
 @Service("bidInfoServiceImpl")
 public class BidInfoServiceImpl implements BidInfoService {

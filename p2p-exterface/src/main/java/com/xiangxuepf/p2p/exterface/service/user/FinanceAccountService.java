@@ -4,7 +4,6 @@ import com.xiangxuepf.p2p.exterface.model.user.FinanceAccount;
 
 /**
  * @author mhw
- * @create 2019-11-22 11:07
  */
 public interface FinanceAccountService {
 

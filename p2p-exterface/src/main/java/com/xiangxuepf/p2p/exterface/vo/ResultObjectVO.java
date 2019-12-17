@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * @author mhw
- * @create 2019-11-17 15:44
  */
 public class ResultObjectVO implements Serializable {
     /**

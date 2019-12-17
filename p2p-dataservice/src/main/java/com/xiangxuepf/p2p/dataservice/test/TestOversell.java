@@ -12,7 +12,6 @@ import java.util.concurrent.Executors;
 
 /**
  * @author mhw
- * @create 2019-11-28 11:59
  */
 public class TestOversell {
     public static void main(String[] args) {

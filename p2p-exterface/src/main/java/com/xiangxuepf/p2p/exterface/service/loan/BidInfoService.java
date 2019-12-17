@@ -9,7 +9,6 @@ import java.util.Map;
 
 /**
  * @author mhw
- * @create 2019-11-13 15:57
  */
 public interface BidInfoService {
     /**

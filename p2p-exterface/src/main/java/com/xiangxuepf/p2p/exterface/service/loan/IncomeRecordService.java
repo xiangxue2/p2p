@@ -2,7 +2,6 @@ package com.xiangxuepf.p2p.exterface.service.loan;
 
 /**
  * @author mhw
- * @create 2019-11-29 10:22
  */
 public interface IncomeRecordService {
     /**

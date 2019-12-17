@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author mhw
- * @create 2019-12-07 09:21
  */
 public class UserInterceptor implements org.springframework.web.servlet.HandlerInterceptor{
 

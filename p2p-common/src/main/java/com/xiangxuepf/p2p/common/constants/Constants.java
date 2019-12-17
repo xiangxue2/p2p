@@ -2,7 +2,6 @@ package com.xiangxuepf.p2p.common.constants;
 
 /**
  * @author mhw
- * @create 2019-11-12 09:30
  */
 /*故这Constants,有些做key,有些做值；
     1.  做model的key

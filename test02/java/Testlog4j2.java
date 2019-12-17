@@ -3,7 +3,6 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * @author mhw
- * @create 2019-11-30 09:17
  */
 public class Testlog4j2
 {

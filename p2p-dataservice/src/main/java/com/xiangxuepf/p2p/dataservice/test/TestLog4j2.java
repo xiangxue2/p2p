@@ -2,7 +2,6 @@ package com.xiangxuepf.p2p.dataservice.test;
 
 /**
  * @author mhw
- * @create 2019-11-29 21:33
  */
 public class TestLog4j2 {
 

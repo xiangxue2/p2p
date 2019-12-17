@@ -16,7 +16,6 @@ import java.util.Map;
 
 /**
  * @author mhw
- * @create 2019-12-05 12:23
  */
 public class QRCodeTest {
     @Test

@@ -172,7 +172,7 @@ function login() {
 				 系统繁忙
 				 */
 				if(jsonObject.errorMessage == "OK"){
-					window.location.href = referrer;
+					window.location.href = referrer;  //获取上个请求路径
 				}else {
 					$("#showId").html("用户名或密码有误，请重新登录");
 				}

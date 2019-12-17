@@ -5,7 +5,6 @@ import com.xiangxuepf.p2p.exterface.vo.ResultObjectVO;
 
 /**
  * @author mhw
- * @create 2019-11-13 14:07
  */
 public interface UserService {
     /**
