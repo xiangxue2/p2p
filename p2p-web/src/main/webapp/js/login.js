@@ -4,9 +4,9 @@ var referrer = "";//登录后返回页面
 referrer = document.referrer; //获取到当前页面之前页面的URL；
 if (!referrer) {
 	try {
-		if (window.opener) {                
+		if (window.opener) {    //判断是否支持opener;返回父窗口，opener 属性是一个可读可写的属性，可返回对创建该窗口的 Window 对象的引用。
 			// IE下如果跨域则抛出权限异常，Safari和Chrome下window.opener.location没有任何属性              
-			referrer = window.opener.location.href;
+			referrer = window.opener.location.href;//获取到当前页面之前页面的URL；;使用window对象实现窗口跳转；
 			/*
 			 当使用window.open()打开一个窗口，你可以使用此opener属性返回来自目标窗口，源窗口的详细信息；
 			 以上则是获取源窗口的url;
@@ -172,7 +172,7 @@ function login() {
 				 系统繁忙
 				 */
 				if(jsonObject.errorMessage == "OK"){
-					window.location.href = referrer;  //获取上个请求路径
+					window.location.href = referrer;  //跳转上个请求路径
 				}else {
 					$("#showId").html("用户名或密码有误，请重新登录");
 				}

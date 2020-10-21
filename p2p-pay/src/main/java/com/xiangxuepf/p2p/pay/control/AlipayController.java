@@ -87,7 +87,8 @@ public class AlipayController {
     }
 
     /**
-     * 充值功能，接收支付宝alipay.trade.page.pay.jsp 接口的返回form表单，的return_url的请求；
+     * 充值功能，接收支付宝toAlipay.jsp中的form表单的url请求，
+     * （alipay.trade.page.pay.jsp 接口的返回form表单，的return_url的请求；）
      * @param request
      * @param model
      * @return

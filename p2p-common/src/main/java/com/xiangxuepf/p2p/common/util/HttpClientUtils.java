@@ -232,6 +232,7 @@ public class HttpClientUtils {
                     .build();
             //为httpPost实例设置配置
             httpPost.setConfig(requestConfig);
+            //StringEntity会解析xml
             StringEntity stringEntity = new StringEntity(requestDataXml,"UTF-8");
             httpPost.setEntity(stringEntity);
             //设置请求头，告诉他，我的请求参数格式； //@

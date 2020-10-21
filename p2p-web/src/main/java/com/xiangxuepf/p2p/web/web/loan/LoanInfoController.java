@@ -111,6 +111,7 @@ public class LoanInfoController {
 
         //获取当前用户的信息
         User sessionUser = (User) request.getSession().getAttribute(Constants.SESSION_USER);
+
         //判断用户是否登录；
         if (null != sessionUser) {
             //获取当前用户的账号余额；

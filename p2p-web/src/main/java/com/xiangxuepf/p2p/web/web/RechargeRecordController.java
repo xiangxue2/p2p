@@ -86,6 +86,8 @@ public class RechargeRecordController {
 
     /**
      * 接收pay工程alipay.trade.page.pay接口返回的支付数据，通过return_url请求
+     * 支付宝返回 --> form表单，跳转地址是return_url -->
+     * pay工程 /api/alipayBack (没在公网哦；不用在公网) -->toP2P,form表单 --> web工程 /loan/alipayBack
      * @param request
      * @param model
      * @param out_trade_no
@@ -245,7 +247,7 @@ public class RechargeRecordController {
             //判断业务处理结果
             if (StringUtils.equals(Constants.SUCCESS,resultCode)){
                 //将code_url转为二维码；
-                String codeUrl = jsonObject.getString("code_url");
+                String codeUrl = jsonObject.getString("code_url");//微信支付就是为了获得这个url，然把这url转成二维码；
                 //创建一个矩阵对象；
                 Map<com.google.zxing.EncodeHintType, Object> hintMap = new HashMap<>();
                 hintMap.put(com.google.zxing.EncodeHintType.CHARACTER_SET,"UTF-8");

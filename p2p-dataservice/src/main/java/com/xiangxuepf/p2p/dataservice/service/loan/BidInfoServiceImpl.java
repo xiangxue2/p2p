@@ -39,7 +39,7 @@ public class BidInfoServiceImpl implements BidInfoService {
      */
     @Override
     public Double queryAllBidMoney() {
-        //获取指定key的操作对象；
+        //获取指定key的value的操作对象；
         BoundValueOperations<Object, Object> boundValueOps =
                 redisTemplate.boundValueOps(Constants.ALL_BID_MONEY);
 
